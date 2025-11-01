@@ -1,0 +1,1 @@
+This repositiry contains the main project of the year 2025, made bay Raphael Lombardi, Julia Horing and João Manoel,for the subject 'Projeto Integrador' taught by Humberto Fierrovante Ferro and Alexandre Rodrigues Monge
