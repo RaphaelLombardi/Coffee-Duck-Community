@@ -21,6 +21,12 @@ body {
   --color3: #3b3b3b;
 }
 
+.modo-escuro{
+  --color1: #405e46;
+  --color2: #3b3b3b;
+  --color3: #fff;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -141,6 +147,7 @@ footer {
   display: flex;
   flex: 1;
   background-color: var(--color1);
+  flex-wrap: wrap;
 }
 
 .footer-content {
