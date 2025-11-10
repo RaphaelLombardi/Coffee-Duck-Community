@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #b8b8b8;
+  max-width: 100%;
 }
 
 :root {
@@ -84,29 +85,12 @@ header {
 
 .main-content {
   display: flex;
-  flex: 1;
   background-color: var(--color2);
   margin: auto;
   box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  max-width: 1200px;
-}
-
-.column {
-  padding: 10px;
-}
-
-.left {
-  flex: 1;
-}
-
-.center {
-  flex: 4;
-}
-
-.right {
-  flex: 1;
+  width: 100%;
+  padding: 0 100px;
 }
 
 blockquote {
@@ -125,17 +109,6 @@ blockquote {
   width: 100%;
   margin-top: 20px;
   font-size: 40px;
-}
-
-#carousel-content {
-  height: 300px;
-  width: 80vw;
-  max-width: 900px;
-  border: 1px dotted #f00;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 footer {
@@ -157,8 +130,7 @@ footer {
 }
 
 .commom-writing-content {
-  width: 100vw;
-  max-width: 1200px;
+  width: 100%;
   padding: 30px;
 }
 
@@ -168,8 +140,7 @@ footer {
   padding: 20px;
 }
 
-.commom-writing-content h1,
-h2 {
+.commom-writing-content h1, h2 {
   margin: 20px;
 }
 
@@ -249,7 +220,7 @@ header a:hover {
 }
 
 .carrossel {
-  width: 70%;
+  width: 80%;
   margin: 25px auto;
   overflow: hidden;
   position: relative;
@@ -314,4 +285,28 @@ footer li{
 footer img{
   width: 300px;
   margin: auto;
+}
+
+#quem-somos{
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 100%;
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 100px;
+
+}
+
+#quem-somos div{
+  display: flex;
+  width: 100%;
+}
+
+#quem-somos img{
+  width: 250px;
+}
+
+#quem-somos p{
+  width: 70%;
 }
