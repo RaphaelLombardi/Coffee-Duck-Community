@@ -45,7 +45,7 @@ header {
   color: var(--color2);
   width: 100vw;
   position: fixed;
-  height: 75px;
+  height: fit-content;
   box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }
@@ -53,8 +53,9 @@ header {
 .header-container-content {
   display: flex;
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
+  align-items: center;
 }
 
 #patx {
@@ -62,10 +63,9 @@ header {
   border-radius: 10vh;
 }
 
-.menu {
+.nav {
   list-style: none;
   display: flex;
-  margin-top: 20px;
   flex-wrap: wrap;
 }
 
@@ -73,14 +73,30 @@ header {
   margin: 0px 30px;
 }
 
-.menu button {
-  background-color: var(--color1);
-  border: 1px solid var(--color2);
+.options{
+  list-style: none;
+}
+
+.options button {
+  background-color: transparent;
+  border: none;
   color: var(--color2);
   padding: 5px;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 6px;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.options{
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
 }
 
 .main-content {
@@ -114,6 +130,8 @@ blockquote {
 footer {
   display: flex;
   flex-direction: column;
+  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .footer-conteiner {
@@ -131,6 +149,8 @@ footer {
 
 .commom-writing-content {
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
   padding: 30px;
 }
 
@@ -220,7 +240,7 @@ header a:hover {
 }
 
 .carrossel {
-  width: 80%;
+  width: 70%;
   margin: 25px auto;
   overflow: hidden;
   position: relative;
@@ -235,7 +255,7 @@ header a:hover {
   padding: 0;
   margin: 0;
   list-style: none;
-  animation: transicao 12s infinite;
+  animation: transicao 20s infinite;
 }
 
 .carrossel li {
@@ -295,7 +315,11 @@ footer img{
   border-radius: 30px;
   font-size: 20px;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
+  flex-wrap: wrap;
+  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 #quem-somos h2{
@@ -312,4 +336,118 @@ footer img{
 
 #quem-somos p{
   width: 80%;
+}
+
+#objetivo{
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#objetivo h2{
+  text-align: center;
+}
+
+#passosH{
+  font-size: 30px;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+.passoEsq{
+  width: 50%;
+  border-right: 5px dotted var(--color1);
+  margin: 0;
+}
+
+.passoEsq p{
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.passoDir{
+  justify-self: end;
+  width: 50%;
+  border-left: 5px dotted var(--color1);
+  box-sizing: content-box;
+}
+
+.passoDir p{
+  padding: 0 30px;
+  font-size: 18px;
+}
+
+.integrante{
+  width: 80%;
+  display: flex;
+}
+
+.integrantes h2{
+  font-size: 30px;
+  margin: auto 0;
+}
+
+.integrante img{
+  width: 30%;
+}
+
+.integrante div{
+  margin: auto 0;
+}
+
+.integrante p{
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.integrante a{
+  color: var(--color1);
+  font-size: 18px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.integrante a:hover{
+  text-decoration: underline 2px var(--color1);
+}
+
+#centerH2{
+  justify-self: center;
+  font-size: 30px;
+}
+
+hr{
+  margin: 100px;
+  border: 2px solid var(--color1);
+  margin: 60px 0;
+  border-radius: 2px;
+}
+
+#mapa-do-site h2{
+  justify-self: center;
+  font-size: 30px;
+  margin: 50px;
+}
+
+table{
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color1);
+  border-collapse: collapse;
+}
+
+td{
+  border: 2px solid var(--color1);
+  padding: 20px;
+  width: 50%;
+  background-color: var(--color2);
+}
+
+#mapa-do-site a{
+  text-decoration: none;
+  
 }
