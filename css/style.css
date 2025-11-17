@@ -7,7 +7,12 @@
 }
 
 body {
-  background-color: var(--color2);
+  background-color: var(--colorBackground);
+  color: var(--colorText);
+}
+
+a{
+  color: var(--aColor);
 }
 
 .container {
@@ -21,12 +26,30 @@ body {
   --color1: #5c7a62;
   --color2: #fff;
   --color3: #3b3b3b;
+  --colorText: #1d1d1d;
+  --colorBackground: #fff;
+  --temaColor: #405e46;
+  --temaColor: #1d1d1d;
+  --headerColor: #fff;
+  --aColor: #5c7a62;
+  --shadowColor: rgba(0, 0, 0, 0.5);
 }
 
 .modo-escuro{
-  --color1: #405e46;
+  --color1: #39533e;
   --color2: #3b3b3b;
   --color3: #fff;
+  --colorText: #fff;
+  --colorBackground: #1d1d1d;
+  --temaBColor: #5c7a62;
+  --temaColor: #fff;
+  --headerColor: #fff;
+  --shadowColor: rgba(110, 110, 110, 0.5);
+}
+
+#theme{
+  background-color: var(--temaBColor);
+  color: var(--temaColor);
 }
 
 header {
@@ -38,16 +61,36 @@ header {
   z-index: 10;
 }
 
+#hmenuitem1{
+  color: var(--headerColor);
+}
+
+#hmenuitem2{
+  color: var(--headerColor);
+}
+
+#hmenuitem3{
+  color: var(--headerColor);
+}
+
+#hmenuitem4{
+  color: var(--headerColor);
+}
+
+#hmenuitem5{
+  color: var(--headerColor);
+}
+
 .header-container {
   display: flex;
   flex: 1;
   background-color: var(--color1);
-  color: var(--color2);
+  color: var(--headerColor);
   width: 100vw;
   position: fixed;
   height: fit-content;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
 }
 
 .header-container-content {
@@ -56,31 +99,41 @@ header {
   max-width: 1100px;
   margin: auto;
   align-items: center;
+  background-color: var(--color1);
 }
 
 #patx {
   width: 9vh;
   border-radius: 10vh;
+  background-color: var(--color1);
+}
+
+header a{
+  color: var(--headerColor);
 }
 
 .nav {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--color1);
 }
 
 .menu-item {
   margin: 0px 30px;
+  background-color: var(--color1);
+  color: var(--headerColor);
 }
 
 .options button {
   background-color: transparent;
   font-size: 18px;
   border: none;
-  color: var(--color2);
+  color: var(--headerColor);
   padding: 5px;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--color1);
 }
 
 .menu{
@@ -88,6 +141,8 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  background-color: var(--color1);
+  color: var(--headerColor);
 }
 
 .options{
@@ -95,6 +150,7 @@ header {
   flex-wrap: nowrap;
   width: fit-content;
   list-style: none;
+  background-color: var(--color1);
 }
 
 
@@ -102,8 +158,8 @@ header {
   display: flex;
   background-color: var(--color2);
   margin: auto;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
   width: 100%;
   padding: 0 100px;
   padding: 100px;
@@ -131,8 +187,8 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: var(--color1);
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
 }
 
 .footer-conteiner {
@@ -146,7 +202,7 @@ footer {
 .footer-content {
   flex: 1;
   min-height: 30px;
-  color: var(--color2);
+  color: var(--headerColor);
 }
 
 .commom-writing-content {
@@ -168,13 +224,13 @@ footer {
 
 header a {
   list-style: none;
-  color: var(--color2);
+  color: var(--headerColor);
   text-decoration: none;
   transition: 0.3s;
 }
 
 header a:hover {
-  text-decoration: underline;
+  text-decoration: 2px underline;
   transition: 0.3s;
 }
 
@@ -190,8 +246,8 @@ header a:hover {
 .imagem-inicial img {
   margin: auto;
   border-radius: 5px;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
   max-width: 800px;
 }
 
@@ -210,8 +266,8 @@ header a:hover {
   margin: 25px auto;
   overflow: hidden;
   position: relative;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
   border-radius: 10px;
 }
 
@@ -275,7 +331,7 @@ footer img{
 
 #quem-somos{
   background-color: var(--color1);
-  color: var(--color2);
+  color: var(--headerColor);
   width: 100%;
   padding: 30px;
   border-radius: 30px;
@@ -284,8 +340,8 @@ footer img{
   margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
 }
 
 #quem-somos h2{
@@ -379,14 +435,14 @@ footer img{
 }
 
 .integrante a{
-  color: var(--color1);
+  color: var(--aColor);
   font-size: 18px;
   padding-left: 10px;
   text-decoration: none;
 }
 
 .integrante a:hover{
-  text-decoration: underline 2px var(--color1);
+  text-decoration: underline 2px var(--aColor);
 }
 
 hr{
@@ -394,6 +450,8 @@ hr{
   border: 2px solid var(--color1);
   margin: 60px 0;
   border-radius: 2px;
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
 }
 
 #mapa-do-site h2{
@@ -418,12 +476,12 @@ td{
 
 #mapa-do-site a{
   text-decoration: none;
-  color: var(--color1);
+  color: var(--aColor);
 }
 
 #mapa-do-site a:hover{
   text-decoration: 2px underline;
-  color: var(--color1);
+  color: var(--aColor);
 }
 
 .cards{
@@ -444,8 +502,8 @@ td{
 
 .card img{
   width: 100%;
-  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: -2px 2px 15px 0px var(--shadowColor);
+  box-shadow: 2px 2px 15px 0px var(--shadowColor);
   border-radius: 20px;
   margin-bottom: 15px;
   max-height: 300px;
@@ -455,7 +513,7 @@ td{
   text-decoration: none;
   font-size: 18px;
   margin: 5px;
-  color: var(--color1);
+  color: var(--aColor);
 }
 
 h2{
